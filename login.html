@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landscaper Login</title>
+    <link href="app.js"/>
+</head>
+<body>
+<nav>
+    <a href="index.html">home</a>
+    <a href="market.html">market</a>
+    <a href="login.html">multi-player login</a>
+
+
+</nav>
+<h1> Multiple Player Upgrade </h1>
+<h2> Coming Soon...</h2>
+
+
+<!--<div>
+    <fieldset>
+        <legend>Please choose the number of players...</legend>
+
+        <section>
+            <label>
+                <select>
+                    <option value="player1"> 1 Player</option>
+                    <option value="player2"> 2 Players</option>
+                    <option value="player3"> 3 Players</option>
+                    <option value="player4"> 4 Players</option>
+                </select>
+            </label>
+        <section>
+            <form class="players">
+                <label> Player 1 <input type="text" required placeholder="enter player 1 "></label>
+                <label> Player 2 <input type="text" required placeholder="enter player 2 "></label>
+                <label> Player 3 <input type="text" required placeholder="enter player 3 "></label>
+                <label> Player 4 <input type="text" required placeholder="enter player 4 "></label>
+
+        </section>
+    </fieldset>
+</div>-->
+</body>
+</html>
+let moneyInAccount = [];
+function makeMoney() {
+if (account < 10) {
+account += 1;
+moneyInAccount.splice(0, 1, account = account);
+alert(`Great job! You have earned $${account} cutting lawns today!
+Your account is now $${account}.`);
+} else if (account < 30 && tools[1].type === 'Scissors') {
+account += 5;
+moneyInAccount.splice(0, 1, account = account);
+alert(`Great job! You have earned $${account} cutting lawns today!`);
+} else {
+
+}
+}

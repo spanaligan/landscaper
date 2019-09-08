@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>The Landscaper Game</title>
+    <link href="style.css" type="text/css"/>
+    <link href="login.html" type="text/html"/>
+</head>
+    <nav>
+        <a href="index.html">home</a>
+        <a href="#market">market</a>
+        <a href="login.html">multi-player login</a>
+    </nav>
+<body>
+<h1> Landscaper </h1>
+<img src="landscaper_images/background.jpg" alt="Twilight with the Moon" width="100%"/>
+<div>
+    <p> Congratulations on starting your new Landscaper business!
+        You are now cleared to cut lawns for a fee. </p>
+
+    <p> Unfortunately, your account is empty. You need to work to make money. </p>
+    <p> Push the work button to earn money! </p>
+    <label><input type="button" value="WORK for $1" onclick="addDollar()"/></label>
+    <label><input type="button" value="WORK for $5" onclick="addFive()"/></label>
+    <label><input type="button" value="WORK for $50" onclick="addFifty()"/></label>
+    <label><input type="button" value="WORK for $100" onclick="addHundred()"/></label>
+    <label><input type="button" value="WORK for $250" onclick="addTwoFifty()"/></label>
+    <label><input id="pay" type="button" value="PAY STUDENTS" onclick="payStudents()"/></label>
+
+    <p>(Better tools are available in the <a href="#market"> market</a>. As you earn more
+        money, visit to upgrade your equipment and earn money even faster!)</p>
+
+
+</div>
+<h2 id="market"> Welcome to the Market!</h2>
+<h3> This is the place for you to buy, sell, and trade your tools. </h3>
+<img src="https://image.shutterstock.com/image-photo/antique-sheep-shearing-scissors-isolated-260nw-55330198.jpg"
+     alt="rusty scissors">
+<label><input id="scissors" type="button" value="BUY Scissors for $5" onclick="buyScissors()"/></label>
+<img src="https://image.shutterstock.com/image-photo/lawnmower-260nw-469137164.jpg" alt="">
+<label><input id="push-lawn" type="button" value="BUY Push Lawnmower for $25" onclick="buyPushLawnmower()"/></label>
+<img src="https://media.istockphoto.com/photos/mowing-the-grass-picture-id520135246?k=6&m=520135246&s=612x612&w=0&h=vG1eZZIOO7qtTg2jK4I0Ddgz_H13WZwYDLwexvW4liw=" alt="">
+<label><input id="gas-lawn" type="button" value="BUY Gas Lawnmower for $250" onclick="buyGasLawnmower()"/></label>
+<img src="https://image.shutterstock.com/image-illustration/zombie-crowd-walking-nighthalloween-conceptillustration-260nw-454095508.jpg"
+     alt="">
+<label><input id="students" type="button" value="BUY Starving Students for $500" onclick="buyStudents()"/></label>
+<script src="app.js"></script>
+</body>
+</html>
