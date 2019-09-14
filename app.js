@@ -25,7 +25,7 @@ let account = 0;
 let moneyInAccount = [];
 
 function addDollar() {
-    if (account < 10) {
+    if (account < 5) {
         account += 1;
         moneyInAccount.splice(0, 1, account);
         alert(`Great job! You have earned $${account} cutting lawns today! 
@@ -37,7 +37,7 @@ function addDollar() {
 
 
 function addFive() {
-    if (account < 30 && myTool === 'Rusty Scissors') {
+    if (account < 25 && myTool === 'Rusty Scissors') {
         account += 5;
         moneyInAccount.splice(0, 1, account);
         alert(`Great job! You have earned $${account} cutting lawns today! 
@@ -88,7 +88,7 @@ let myTool = "";
 function buyScissors() {
     if (moneyInAccount < 5) {
         alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[0].type} to cut lawns for $${tools[0].pay}.`);
-    } else if (moneyInAccount > 5) {
+    } else if (moneyInAccount >= 5) {
         document.getElementById('scissors');
         moneyInAccount.splice(0, 1, account -= 5);
         myTool = tools[1].type;
@@ -102,7 +102,7 @@ function buyScissors() {
 function buyPushLawnmower() {
     if (moneyInAccount < 25) {
         alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[1].type} to cut lawns for $${tools[1].pay}.`);
-    }  else if (moneyInAccount > 25) {
+    }  else if (moneyInAccount >= 25) {
         document.getElementById('push-lawn');
         moneyInAccount.splice(0, 1, account -= 25);
         myTool = tools[2].type;
@@ -113,7 +113,7 @@ function buyPushLawnmower() {
 function buyGasLawnmower() {
     if (moneyInAccount < 250) {
         alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[2].type} to cut lawns for $${tools[2].pay}.`);
-    }  else if (moneyInAccount > 250) {
+    }  else if (moneyInAccount >= 250) {
         document.getElementById('gas-lawn');
         moneyInAccount.splice(0, 1, account -= 250);
         myTool = tools[3].type;
@@ -124,7 +124,7 @@ function buyGasLawnmower() {
 function buyStudents() {
     if (moneyInAccount < 500) {
         alert(`Sorry, you don't have enough money to buy tools yet. You can use your ${tools[3].type} to cut lawns for $${tools[3].pay}.`);
-    }  else if (moneyInAccount > 500) {
+    }  else if (moneyInAccount >= 500) {
         document.getElementById('gas-lawn');
         moneyInAccount.splice(0, 1, account -= 500);
         myTool = tools[4].type;

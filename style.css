@@ -1,7 +1,121 @@
-nav a {
-    display: inline;
-    text-decoration: none;
+nav {
+    float: left;
+    margin: 15px;
+    padding: 20px;
 }
-body {
+nav a {
+    font-family: 'Cute Font', cursive;
+    display: block;
+    text-decoration: none;
+    color: orangered;
+    font-size: 40px;
+    margin-left: 50%;
+    padding: 30px;
+}
+h1 {
+    font-family: 'Cute Font', cursive;
+    text-align: right;
+    font-size: 100px;
+    padding-right: 10%;
+    margin: 10px 10%;
+}
+h2 {
+    font-family: 'Cute Font', cursive;
+    text-align: center;
+    font-size: 75px;
+    margin: 10px 10%;
 
 }
+h3 {
+    font-family: 'Cute Font', cursive;
+    text-align: right;
+    font-size: 30px;
+    margin: 10px 10%;
+}
+h4 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 10%;
+
+}
+p {
+    font-family: 'Bree Serif', serif;
+    text-align: right;
+    font-size: 16px;
+    padding-top: 20px;
+    margin: 10px 10%;
+}
+.form {
+    display: inline-flex;
+    padding: 10px;
+    margin: 10px 0 10px 40%;
+}
+section {
+    display: block;
+    float: right;
+}
+body {
+    display: block;
+    width: 100%;
+    background-image: url("landscaper_images/background.jpg");
+    background-repeat: no-repeat;
+}
+.first{
+    width:100%;
+    height:400px;
+    position:absolute;
+}
+.first p {
+    margin-top: -20px;
+}
+.second {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 450px;
+}
+.third {
+    position: relative;
+    width: 100%;
+    top: 800px;
+    height: auto;
+}
+.market {
+    min-width: 200px;
+    min-height: 200px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(48, 153, 2, 0.77);
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #1c4708;
+    border-radius: 5px;
+}
+div img {
+    display: block;
+    float: top;
+    max-width: 200px;
+    height: 150px;
+    border: 1px solid #1c4708;
+    border-radius: 5px;
+}
+div label {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    display: block;
+    float: bottom;
+    margin: 20px 5px 5px;
+}
+.buttons {
+    font-family: 'Bree Serif', serif;
+    font-size: 12px;
+    border: 1px solid #1c4708;
+    border-radius: 5px;
+}
+p a {
+    text-decoration: none;
+    color: orangered;
+}
+
