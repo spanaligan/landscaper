@@ -141,3 +141,6 @@ function payStudents() {
         alert(`Thanks for feeding the ${tools[4].type}`);
     }
 }
+function returnToTop() {
+    window.scrollTo(0,0);
+}
