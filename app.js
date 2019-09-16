@@ -144,3 +144,6 @@ function payStudents() {
 function returnToTop() {
     window.scrollTo(0,0);
 }
+function returnToMiniGames() {
+    window.location.href = "http://spiano.dev/mini-games.html"
+}
